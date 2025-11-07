@@ -1,0 +1,27 @@
+{
+  "temptraining_email": "",
+  "temptraining_password": "",
+  "target_technologies": [
+    "Python",
+    "IA",
+    "Inteligencia Artificial",
+    "Big Data",
+    "IoT",
+    "Cloud",
+    "AWS",
+    "Azure"
+  ],
+  "preferred_levels": [
+    "Básico",
+    "Intermedio",
+    "Avanzado"
+  ],
+  "max_courses_per_tech": 5,
+  "enable_auto_enrollment": false,
+  "update_frequency_hours": 24,
+  "export_formats": [
+    "json",
+    "loop",
+    "md"
+  ]
+}

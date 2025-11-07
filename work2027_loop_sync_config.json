@@ -1,0 +1,12 @@
+{
+  "sync_interval_hours": 6,
+  "auto_update_loop": true,
+  "backup_before_sync": true,
+  "notify_on_changes": true,
+  "temptraining_integration": true,
+  "github_integration": true,
+  "copilot_prompts_update": true,
+  "productivity_metrics": true,
+  "last_sync": null,
+  "sync_count": 0
+}

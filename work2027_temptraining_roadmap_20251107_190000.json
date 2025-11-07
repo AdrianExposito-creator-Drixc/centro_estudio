@@ -1,0 +1,140 @@
+{
+  "generated_date": "2025-11-07T19:00:00.966562",
+  "total_courses": 6,
+  "total_certifications": 2,
+  "technologies": {
+    "Python": [
+      {
+        "title": "Python para Automatización y Productividad",
+        "url": "https://temptraining.es/curso/python-automatizacion",
+        "category": "Formación Técnica",
+        "duration": "40 horas",
+        "level": "Intermedio",
+        "status": "available",
+        "certification": true,
+        "technology": "Python",
+        "description": "Aprende Python aplicado a automatización de tareas y mejora de productividad personal",
+        "start_date": null,
+        "completion_date": null
+      }
+    ],
+    "IA": [
+      {
+        "title": "Inteligencia Artificial Aplicada con Python",
+        "url": "https://temptraining.es/curso/ia-python",
+        "category": "Formación Técnica",
+        "duration": "60 horas",
+        "level": "Avanzado",
+        "status": "available",
+        "certification": true,
+        "technology": "IA",
+        "description": "Desarrolla soluciones de IA usando Python y librerías modernas",
+        "start_date": null,
+        "completion_date": null
+      }
+    ],
+    "Big Data": [
+      {
+        "title": "Big Data y Analytics para Desarrolladores",
+        "url": "https://temptraining.es/curso/big-data-analytics",
+        "category": "Formación Técnica",
+        "duration": "45 horas",
+        "level": "Intermedio",
+        "status": "available",
+        "certification": true,
+        "technology": "Big Data",
+        "description": "Análisis de grandes volúmenes de datos y visualización",
+        "start_date": null,
+        "completion_date": null
+      }
+    ],
+    "IoT": [
+      {
+        "title": "IoT Development con Python y Raspberry Pi",
+        "url": "https://temptraining.es/curso/iot-python",
+        "category": "Formación Técnica",
+        "duration": "35 horas",
+        "level": "Intermedio",
+        "status": "available",
+        "certification": true,
+        "technology": "IoT",
+        "description": "Desarrollo de aplicaciones IoT usando Python y hardware",
+        "start_date": null,
+        "completion_date": null
+      }
+    ],
+    "Cloud": [
+      {
+        "title": "Cloud Computing con AWS y Azure",
+        "url": "https://temptraining.es/curso/cloud-aws-azure",
+        "category": "Formación Técnica",
+        "duration": "50 horas",
+        "level": "Avanzado",
+        "status": "available",
+        "certification": true,
+        "technology": "Cloud",
+        "description": "Despliegue y gestión de aplicaciones en la nube",
+        "start_date": null,
+        "completion_date": null
+      },
+      {
+        "title": "DevOps y Automatización CI/CD",
+        "url": "https://temptraining.es/curso/devops-cicd",
+        "category": "Formación Técnica",
+        "duration": "55 horas",
+        "level": "Avanzado",
+        "status": "available",
+        "certification": true,
+        "technology": "Cloud",
+        "description": "Implementación de pipelines automatizados y DevOps",
+        "start_date": null,
+        "completion_date": null
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Python Developer Certification",
+      "url": "https://temptraining.es/cert/python-dev",
+      "provider": "Temptraining",
+      "status": "active",
+      "issue_date": "2024-06-15",
+      "expiry_date": null,
+      "credential_id": null
+    },
+    {
+      "name": "Cloud Solutions Architect",
+      "url": "https://temptraining.es/cert/cloud-architect",
+      "provider": "Temptraining",
+      "status": "in_progress",
+      "issue_date": null,
+      "expiry_date": null,
+      "credential_id": null
+    }
+  ],
+  "recommendations": [
+    "🎯 Prioriza Python para maximizar automatización Work 2027",
+    "🤖 Certificación IA complementa perfectamente GitHub Copilot",
+    "☁️ Skills Cloud potencian deployment automatizado",
+    "📊 Big Data mejora métricas y analytics del ecosistema",
+    "🔗 IoT amplía las posibilidades de automatización",
+    "🚀 Combina todas las tecnologías para máximo ROI Work 2027"
+  ],
+  "work2027_integration": {
+    "github_integration": true,
+    "copilot_prompts": [
+      "@copilot Crear proyecto Python automatización Work 2027",
+      "@copilot Implementar IA en workflow productividad",
+      "@copilot Desarrollar dashboard analytics Big Data",
+      "@copilot Integrar IoT con sistema Work 2027",
+      "@copilot Desplegar aplicación Cloud Azure/AWS"
+    ],
+    "productivity_impact": {
+      "skill_multiplier": 1.9,
+      "automation_potential": 120,
+      "estimated_time_savings": 270,
+      "career_advancement_score": 72,
+      "work2027_synergy": 95
+    }
+  }
+}
