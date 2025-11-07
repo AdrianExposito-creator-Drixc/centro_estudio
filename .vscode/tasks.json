@@ -1,0 +1,59 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Work 2027: Workflow Diario Completo",
+            "type": "shell",
+            "command": "./work2027_daily_run.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Work 2027: Solo Generar Log",
+            "type": "shell",
+            "command": "python3",
+            "args": ["work2027_log_generator.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Work 2027: Solo Sincronizar OneDrive",
+            "type": "shell",
+            "command": "./sync_work2027_onedrive.sh",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Work 2027: Configurar M365",
+            "type": "shell",
+            "command": "python3",
+            "args": ["work2027_m365_integration.py"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}

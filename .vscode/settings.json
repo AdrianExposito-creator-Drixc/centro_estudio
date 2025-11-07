@@ -1,0 +1,70 @@
+{
+  "copilot.advanced": {
+    "debug.overrideEngine": "codex"
+  },
+  "copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true,
+    "python": true
+  },
+  "github.copilot.advanced": {
+    "debug.showScores": true
+  },
+  "github.copilot.chat.localeOverride": "es",
+  "github.copilot.chat.customCommands": {
+    "work2027-summary": {
+      "description": "Resume progreso diario Work 2027",
+      "prompt": "Analiza los archivos modificados en la carpeta Work2027 y genera un resumen breve en español para el informe diario."
+    },
+    "work2027-code-review": {
+      "description": "Revisar código Work 2027",
+      "prompt": "Revisa el código Python actual siguiendo los estándares Work 2027: PEP 8, comentarios en español, variables descriptivas y optimización para automatización personal."
+    },
+    "work2027-optimize": {
+      "description": "Optimizar para automatización",
+      "prompt": "Optimiza este código para automatización personal Work 2027, priorizando eficiencia, reutilización y integración con Microsoft 365."
+    },
+    "work2027-document": {
+      "description": "Documentar para M365 Copilot",
+      "prompt": "Genera documentación clara en español para que Microsoft 365 Copilot pueda crear reportes automáticos de este código."
+    },
+    "work2027-commit": {
+      "description": "Gestionar commits automáticos",
+      "prompt": "Ejecuta el workflow de commit automático Work 2027: analiza cambios, genera mensaje inteligente y sincroniza con GitHub."
+    },
+    "work2027-deploy": {
+      "description": "Desplegar cambios completos",
+      "prompt": "Ejecuta el workflow completo Work 2027: genera logs, sincroniza OneDrive, commit a GitHub y notifica a Microsoft 365 Copilot."
+    },
+    "work2027-analyze": {
+      "description": "Análisis completo de código",
+      "prompt": "Ejecuta análisis completo del workspace Work 2027: métricas de código, calidad, dependencias y sugerencias de mejora."
+    },
+    "work2027-fix": {
+      "description": "Corregir errores automáticamente",
+      "prompt": "Detecta y corrige automáticamente errores en el código Work 2027: sintaxis, linting, imports y optimizaciones."
+    },
+    "work2027-backup": {
+      "description": "Backup completo del proyecto",
+      "prompt": "Ejecuta backup completo Work 2027: archivos, configuraciones, logs y sincronización con sistemas de respaldo."
+    },
+    "work2027-status": {
+      "description": "Estado completo del sistema",
+      "prompt": "Genera reporte de estado completo Work 2027: Git, OneDrive, Microsoft 365, VS Code y métricas de productividad."
+    }
+  },
+  "files.associations": {
+    "*.work2027": "python",
+    "*_work2027.py": "python"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "python.defaultInterpreterPath": "./venv/bin/python",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#2D5A27",
+    "statusBar.foreground": "#FFFFFF",
+    "titleBar.activeBackground": "#2D5A27"
+  }
+}

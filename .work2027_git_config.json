@@ -1,0 +1,24 @@
+{
+  "auto_commit": true,
+  "auto_push": true,
+  "commit_message_template": "🚀 Work 2027: {tipo} - {fecha}",
+  "branch_work2027": "work2027-auto",
+  "commit_frequency": "daily",
+  "files_to_track": [
+    "*.py",
+    "*.md",
+    "*.json",
+    "*.sh",
+    ".vscode/settings.json",
+    ".vscode/tasks.json"
+  ],
+  "exclude_patterns": [
+    "__pycache__",
+    "*.pyc",
+    "node_modules",
+    ".env",
+    "*.log",
+    "temp/",
+    "resultado_*.json"
+  ]
+}

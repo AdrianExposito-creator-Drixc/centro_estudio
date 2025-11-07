@@ -1,0 +1,36 @@
+{
+    "Python Function Template": {
+        "prefix": "def",
+        "body": [
+            "def ${1:function_name}(${2:parameters}):",
+            "    \"\"\"${3:Description}\"\"\"",
+            "    ${4:pass}",
+            "    return ${5:None}"
+        ],
+        "description": "Function template with docstring"
+    },
+    "Python Class Template": {
+        "prefix": "class",
+        "body": [
+            "class ${1:ClassName}:",
+            "    \"\"\"${2:Class description}\"\"\"",
+            "    ",
+            "    def __init__(self, ${3:parameters}):",
+            "        \"\"\"Initialize ${1:ClassName}\"\"\"",
+            "        ${4:pass}"
+        ],
+        "description": "Class template with constructor"
+    },
+    "Python Main": {
+        "prefix": "main",
+        "body": [
+            "def main():",
+            "    \"\"\"Main function\"\"\"",
+            "    ${1:pass}",
+            "",
+            "if __name__ == \"__main__\":",
+            "    main()"
+        ],
+        "description": "Main function template"
+    }
+}
