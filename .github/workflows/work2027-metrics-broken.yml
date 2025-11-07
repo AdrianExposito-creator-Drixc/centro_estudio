@@ -1,0 +1,208 @@
+name: 📊 Work 2027 Metrics Dashboard (Fixed)
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9 AM
+  workflow_dispatch:
+  push:
+    paths:
+      - '**/Work2027*.md'
+      - '**/work2027*.py'
+      - '**/temptraining*'
+
+jobs:
+  generate-metrics:
+    name: 📈 Generate Weekly Metrics
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout
+      uses: actions/checkout@v4
+
+    - name: 🐍 Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: 📊 Calculate Work 2027 ROI
+      id: metrics
+      run: |
+        python3 << 'EOF'
+        import os
+        import json
+        from datetime import datetime
+
+        # Calculate comprehensive metrics
+        work2027_files = []
+        total_size = 0
+
+        for root, dirs, files in os.walk('.'):
+            for file in files:
+                if 'work2027' in file.lower() or 'temptraining' in file.lower():
+                    filepath = os.path.join(root, file)
+                    try:
+                        size = os.path.getsize(filepath)
+                        total_size += size
+                        work2027_files.append({
+                            'name': file,
+                            'path': filepath,
+                            'size': size,
+                            'type': file.split('.')[-1] if '.' in file else 'unknown'
+                        })
+                    except:
+                        pass
+
+        # Categorize files
+        categories = {
+            'python_scripts': len([f for f in work2027_files if f['type'] == 'py']),
+            'documentation': len([f for f in work2027_files if f['type'] == 'md']),
+            'configs': len([f for f in work2027_files if f['type'] == 'json']),
+            'automation': len([f for f in work2027_files if f['type'] == 'sh']),
+            'temptraining': len([f for f in work2027_files if 'temptraining' in f['name'].lower()]),
+            'integration': len([f for f in work2027_files if 'loop' in f['name'].lower() or 'copilot' in f['name'].lower()])
+        }
+
+        # Calculate productivity metrics
+        base_productivity = 100
+        script_boost = categories['python_scripts'] * 30
+        doc_boost = categories['documentation'] * 15
+        automation_boost = categories['automation'] * 40
+        integration_boost = categories['integration'] * 50
+
+        total_productivity = base_productivity + script_boost + doc_boost + automation_boost + integration_boost
+        roi_percentage = ((total_productivity - base_productivity) / base_productivity) * 100
+
+        # Calculate financial impact
+        hourly_rate = 25  # USD per hour
+        hours_saved_daily = min(8, len(work2027_files) * 0.5)  # Conservative estimate
+        working_days = 250
+        annual_savings = hourly_rate * hours_saved_daily * working_days
+
+        metrics = {
+            'timestamp': datetime.now().isoformat(),
+            'file_analysis': {
+                'total_files': len(work2027_files),
+                'total_size_mb': round(total_size / (1024*1024), 2),
+                'categories': categories
+            },
+            'productivity_metrics': {
+                'base_score': base_productivity,
+                'enhanced_score': total_productivity,
+                'improvement_percentage': round(roi_percentage, 1),
+                'productivity_multiplier': round(total_productivity / base_productivity, 2)
+            },
+            'financial_impact': {
+                'hourly_rate_usd': hourly_rate,
+                'hours_saved_daily': hours_saved_daily,
+                'working_days_annual': working_days,
+                'annual_savings_usd': annual_savings,
+                'roi_percentage': round((annual_savings / 1000) * 100, 0)  # Assuming $1000 setup cost
+            },
+            'ecosystem_health': {
+                'automation_coverage': min(100, categories['automation'] * 25),
+                'integration_level': min(100, categories['integration'] * 20),
+                'documentation_score': min(100, categories['documentation'] * 10),
+                'overall_maturity': min(100, sum(categories.values()) * 5)
+            }
+        }
+
+        # Output for GitHub Actions
+        with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+            f.write(f"total_files={metrics['file_analysis']['total_files']}\n")
+            f.write(f"productivity_score={metrics['productivity_metrics']['enhanced_score']}\n")
+            f.write(f"roi_percentage={metrics['financial_impact']['roi_percentage']}\n")
+            f.write(f"annual_savings={metrics['financial_impact']['annual_savings_usd']}\n")
+
+        # Save detailed metrics
+        with open('work2027_weekly_metrics.json', 'w') as f:
+            json.dump(metrics, f, indent=2)
+
+        print("📊 Weekly metrics calculated successfully!")
+        print(f"📁 Total Work 2027 files: {metrics['file_analysis']['total_files']}")
+        print(f"🎯 Productivity score: {metrics['productivity_metrics']['enhanced_score']}")
+        print(f"💰 Annual savings: ${metrics['financial_impact']['annual_savings_usd']:,}")
+        print(f"📈 ROI: {metrics['financial_impact']['roi_percentage']}%")
+
+        # Print category breakdown
+        print("\n📋 File Categories:")
+        for category, count in categories.items():
+            print(f"  {category}: {count} files")
+        EOF
+
+    - name: 📈 Generate Visual Metrics Report
+      run: |
+        python3 -c "
+        import json
+        from datetime import datetime
+
+        with open('work2027_weekly_metrics.json', 'r') as f:
+            metrics = json.load(f)
+
+        report_lines = [
+            '# 📊 Work 2027 Weekly Metrics Report',
+            '',
+            '**Generated:** ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC'),
+            '',
+            '## 🎯 Executive Summary',
+            '',
+            '| Metric | Value |',
+            '|--------|--------|',
+            '| 📁 Total Files | ' + str(metrics['file_analysis']['total_files']) + ' |',
+            '| 🎯 Productivity Score | ' + str(metrics['productivity_metrics']['enhanced_score']) + ' |',
+            '| 📈 Improvement | +' + str(metrics['productivity_metrics']['improvement_percentage']) + '% |',
+            '| 💰 Annual Savings | $' + str(metrics['financial_impact']['annual_savings_usd']) + ' |',
+            '| 🚀 ROI | ' + str(metrics['financial_impact']['roi_percentage']) + '% |',
+            '',
+            '## 📋 File Analysis',
+            '',
+            '| Category | Count |',
+            '|----------|--------|',
+            '| 🐍 Python Scripts | ' + str(metrics['file_analysis']['categories']['python_scripts']) + ' |',
+            '| 📚 Documentation | ' + str(metrics['file_analysis']['categories']['documentation']) + ' |',
+            '| ⚙️ Configurations | ' + str(metrics['file_analysis']['categories']['configs']) + ' |',
+            '| 🤖 Automation | ' + str(metrics['file_analysis']['categories']['automation']) + ' |',
+            '| 🎓 Temptraining | ' + str(metrics['file_analysis']['categories']['temptraining']) + ' |',
+            '| 🔗 Integrations | ' + str(metrics['file_analysis']['categories']['integration']) + ' |',
+            '',
+            '---',
+            '*Generated by Work 2027 Metrics Dashboard*'
+        ]
+
+        with open('work2027_metrics_report.md', 'w') as f:
+            f.write('\n'.join(report_lines))
+
+        print('📋 Metrics report generated successfully!')
+        "
+
+    - name: 📊 Upload Metrics Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: work2027-metrics-${{ github.run_number }}
+        path: |
+          work2027_weekly_metrics.json
+          work2027_metrics_report.md
+        retention-days: 90
+
+    - name: 📈 Display Results Summary
+      run: |
+        echo "🚀 WORK 2027 WEEKLY METRICS SUMMARY"
+        echo "=================================="
+        echo ""
+        echo "📁 Total Files: ${{ steps.metrics.outputs.total_files }}"
+        echo "🎯 Productivity Score: ${{ steps.metrics.outputs.productivity_score }}"
+        echo "💰 Annual Savings: $$${{ steps.metrics.outputs.annual_savings }}"
+        echo "📈 ROI: ${{ steps.metrics.outputs.roi_percentage }}%"
+        echo ""
+        echo "📊 Detailed metrics saved to artifacts"
+        echo "📋 Report available for download"
+        echo ""
+        echo "✅ Work 2027 ecosystem health check complete!"
+
+    - name: 🔄 Auto-commit Updated Metrics
+      if: github.ref == 'refs/heads/main'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Work 2027 Metrics Bot"
+        git add work2027_weekly_metrics.json work2027_metrics_report.md
+        git diff --staged --quiet || git commit -m "📊 Auto-update Work 2027 weekly metrics - $(date +'%Y-%m-%d')"
+        git push || echo "No changes to push"

@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '*/15 * * * *'  # Every 15 minutes
+    - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        python work2027_loop_integration.py
+        python3 work2027_auto_loop_sync.py
 
     - name: 📊 Upload Metrics
       uses: actions/upload-artifact@v3
