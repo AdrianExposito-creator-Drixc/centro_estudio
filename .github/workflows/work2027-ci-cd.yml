@@ -10,7 +10,7 @@ on:
       deploy_docs:
         description: 'Deploy documentation to GitHub Pages'
         required: false
-        default: 'true'
+        default: true
         type: boolean
 
 env:

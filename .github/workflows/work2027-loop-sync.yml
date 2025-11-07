@@ -28,11 +28,6 @@ jobs:
     - name: 🔗 Run Loop Integration
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        MICROSOFT_TENANT_ID: ${{ secrets.MICROSOFT_TENANT_ID }}
-        MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
-        MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
-        LOOP_WORKSPACE_ID: ${{ secrets.LOOP_WORKSPACE_ID }}
-        LOOP_PAGE_ID: ${{ secrets.LOOP_PAGE_ID }}
       run: |
         python work2027_loop_integration.py
 
