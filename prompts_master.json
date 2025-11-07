@@ -1,0 +1,108 @@
+{
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true,
+    "python": true,
+    "javascript": true,
+    "typescript": true,
+    "json": true
+  },
+  "github.copilot.chat.localeOverride": "es",
+  "github.copilot.chat.customCommands": {
+    "work2027-summary": {
+      "description": "📊 Resume progreso diario Work 2027",
+      "prompt": "Analiza los archivos modificados en la carpeta Work2027 y genera un resumen ejecutivo en español con métricas de productividad."
+    },
+    "work2027-code-review": {
+      "description": "🔍 Revisar código Work 2027",
+      "prompt": "Revisa el código Python actual siguiendo los estándares Work 2027: PEP 8, comentarios en español, variables descriptivas y optimización para automatización personal."
+    },
+    "work2027-optimize": {
+      "description": "⚡ Optimizar para automatización",
+      "prompt": "Optimiza este código para automatización personal Work 2027, priorizando eficiencia, reutilización e integración con Microsoft 365 y OneDrive."
+    },
+    "work2027-document": {
+      "description": "📚 Documentar para M365 Copilot",
+      "prompt": "Genera documentación clara en español para que Microsoft 365 Copilot pueda crear reportes automáticos de este código y funcionalidades."
+    },
+    "work2027-commit": {
+      "description": "🔗 Gestionar commits automáticos",
+      "prompt": "Ejecuta el workflow de commit automático Work 2027: analiza cambios, genera mensaje inteligente y sincroniza con GitHub usando mejores prácticas."
+    },
+    "work2027-deploy": {
+      "description": "🚀 Desplegar cambios completos",
+      "prompt": "Ejecuta el workflow completo Work 2027: genera logs, sincroniza OneDrive, commit a GitHub, actualiza documentación y notifica a Microsoft 365 Copilot."
+    },
+    "work2027-analyze": {
+      "description": "📈 Análisis completo de código",
+      "prompt": "Ejecuta análisis completo del workspace Work 2027: métricas de código, calidad, dependencias, sugerencias de mejora y reporte detallado."
+    },
+    "work2027-fix": {
+      "description": "🔧 Corregir errores automáticamente",
+      "prompt": "Detecta y corrige automáticamente errores en el código Work 2027: sintaxis, linting, imports, optimizaciones y mejores prácticas Python."
+    },
+    "work2027-backup": {
+      "description": "💾 Backup completo del proyecto",
+      "prompt": "Ejecuta backup completo Work 2027: archivos, configuraciones, logs, sincronización con sistemas de respaldo y verificación de integridad."
+    },
+    "work2027-status": {
+      "description": "📋 Estado completo del sistema",
+      "prompt": "Genera reporte de estado completo Work 2027: Git, OneDrive, Microsoft 365, VS Code, métricas de productividad y salud del sistema."
+    },
+    "work2027-mobile": {
+      "description": "📱 Comandos para móvil",
+      "prompt": "Genera versión móvil optimizada de este código o tarea para usar con Samsung Copilot App, incluyendo instrucciones simplificadas."
+    },
+    "work2027-excel": {
+      "description": "📊 Generar Excel automático",
+      "prompt": "Convierte estos datos o análisis en formato Excel con fórmulas automáticas, gráficos y formateo para Microsoft 365 Copilot."
+    },
+    "work2027-outlook": {
+      "description": "📧 Email automático",
+      "prompt": "Genera email profesional para Outlook con resumen del progreso Work 2027, adjuntos recomendados y acciones de seguimiento."
+    },
+    "work2027-powerpoint": {
+      "description": "🎯 Presentación automática",
+      "prompt": "Crea estructura de PowerPoint con este contenido, incluyendo slides de resumen, métricas y próximos pasos para presentación ejecutiva."
+    },
+    "work2027-ai-enhance": {
+      "description": "🤖 Mejora con IA",
+      "prompt": "Aplica mejoras de IA avanzadas a este código: machine learning patterns, optimización algorítmica, y integración con servicios cognitivos."
+    }
+  },
+  "files.associations": {
+    "*.work2027": "python",
+    "*_work2027.py": "python",
+    "*.w27": "json",
+    "*.copilot": "markdown"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "python.defaultInterpreterPath": "./venv/bin/python",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "github.copilot.advanced": {
+    "debug.showScores": true,
+    "debug.overrideEngine": "codex"
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#2D5A27",
+    "statusBar.foreground": "#FFFFFF",
+    "titleBar.activeBackground": "#2D5A27",
+    "titleBar.activeForeground": "#FFFFFF",
+    "activityBar.background": "#2D5A27",
+    "activityBar.foreground": "#FFFFFF"
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
+}

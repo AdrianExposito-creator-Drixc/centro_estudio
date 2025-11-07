@@ -1,0 +1,28 @@
+# 📦 Dependencias para centro de estudio
+
+# Desarrollo y linting
+black>=23.0.0
+flake8>=6.0.0
+pytest>=7.0.0
+ipython>=8.0.0
+
+# Jupyter y notebooks
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Análisis de datos
+seaborn>=0.12.0
+plotly>=5.0.0
+
+# Web y APIs
+requests>=2.31.0
+flask>=2.3.0
+fastapi>=0.100.0
+
+# Utilidades
+python-dotenv>=1.0.0
+rich>=13.0.0
+typer>=0.9.0

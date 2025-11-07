@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "/home/drixc/centro_estudio"
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "/home/drixc/centro_estudio/venv/bin/python",
+    "python.terminal.activateEnvironment": true
+  }
+}

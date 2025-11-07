@@ -1,0 +1,30 @@
+# Work 2027 - Auto Generated .gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+.env
+.env.local
+.env.production
+.env.development
+venv/
+ENV/
+
+# IDEs
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+
+# Work 2027 específicos
+resultado_*.json
+*.log
+temp/
+backup/
+
+# Sistema
+.DS_Store
+Thumbs.db
