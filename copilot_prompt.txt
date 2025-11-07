@@ -1,0 +1,12 @@
+
+@Copilot Generar resumen ejecutivo Work 2027:
+
+📊 Métricas actuales:
+• Productividad: 0/100
+• ROI: +0%
+• Archivos Work 2027: 0
+• Commits totales: 0
+• Issues abiertas: 0
+• Ahorros anuales: $0
+
+🎯 Genera insights y recomendaciones en español.

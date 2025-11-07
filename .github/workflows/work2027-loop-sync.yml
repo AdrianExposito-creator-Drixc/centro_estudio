@@ -1,0 +1,60 @@
+name: 🔗 Work 2027 Loop Integration
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch:
+
+jobs:
+  sync-loop-dashboard:
+    name: 🔄 Sync Loop Dashboard
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📥 Checkout
+      uses: actions/checkout@v4
+
+    - name: 🐍 Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: 📦 Install Dependencies
+      run: |
+        pip install requests python-dotenv
+
+    - name: 🔗 Run Loop Integration
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MICROSOFT_TENANT_ID: ${{ secrets.MICROSOFT_TENANT_ID }}
+        MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
+        MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
+        LOOP_WORKSPACE_ID: ${{ secrets.LOOP_WORKSPACE_ID }}
+        LOOP_PAGE_ID: ${{ secrets.LOOP_PAGE_ID }}
+      run: |
+        python work2027_loop_integration.py
+
+    - name: 📊 Upload Metrics
+      uses: actions/upload-artifact@v3
+      with:
+        name: work2027-loop-metrics-${{ github.run_number }}
+        path: |
+          work2027_loop_metrics.json
+          copilot_prompt.txt
+        retention-days: 30
+
+    - name: 📈 Display Results
+      run: |
+        echo "🚀 Work 2027 Loop Integration completed!"
+        if [ -f "work2027_loop_metrics.json" ]; then
+          echo "📊 Metrics generated successfully"
+          cat work2027_loop_metrics.json
+        fi
+        if [ -f "copilot_prompt.txt" ]; then
+          echo "🤖 Copilot prompt ready"
+          echo "Use this prompt in Microsoft 365 Copilot:"
+          echo "---"
+          cat copilot_prompt.txt
+        fi

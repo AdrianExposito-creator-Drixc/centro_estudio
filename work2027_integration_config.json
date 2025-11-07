@@ -1,0 +1,29 @@
+{
+  "github_repo": "AdrianExposito-creator-Drixc/centro_estudio",
+  "github_token": "[TU_GITHUB_TOKEN]",
+  "microsoft_tenant_id": "[TU_TENANT_ID]",
+  "microsoft_client_id": "[TU_CLIENT_ID]",
+  "microsoft_client_secret": "[TU_CLIENT_SECRET]",
+  "loop_workspace_id": "[TU_LOOP_WORKSPACE_ID]",
+  "loop_page_id": "[TU_LOOP_PAGE_ID]",
+  "update_interval_minutes": 15,
+  "enable_notifications": true,
+  "copilot_integration": true,
+  "notification_settings": {
+    "email": "tu-email@dominio.com",
+    "teams_webhook": "[OPTIONAL_TEAMS_WEBHOOK]",
+    "slack_webhook": "[OPTIONAL_SLACK_WEBHOOK]"
+  },
+  "metrics_thresholds": {
+    "productivity_score_warning": 70,
+    "productivity_score_critical": 50,
+    "roi_target": 1000,
+    "max_open_issues": 10
+  },
+  "automation_preferences": {
+    "auto_commit_summaries": true,
+    "auto_generate_reports": true,
+    "auto_update_documentation": true,
+    "copilot_auto_suggestions": true
+  }
+}
