@@ -1,0 +1,179 @@
+# 📱 WORK 2027 - PROMPTS PARA COPILOT MÓVIL (SAMSUNG)
+
+## 🚀 Comandos Rápidos para Samsung Copilot App
+
+### ⭐ PROMPTS PRINCIPALES
+
+#### 📊 Resumen Diario
+```
+Work2027 resumen: Genera un resumen ejecutivo de mi progreso diario incluyendo tareas completadas, métricas de productividad y próximas acciones prioritarias.
+```
+
+#### 📈 Análisis de Productividad
+```
+Work2027 productividad: Analiza mis patrones de trabajo de hoy, identifica picos de rendimiento y sugiere optimizaciones para mañana.
+```
+
+#### 📝 Planificación Inteligente
+```
+Work2027 planning: Crea un plan de trabajo optimizado para mañana basado en mis objetivos, deadlines y energía disponible.
+```
+
+#### 🎯 Priorización de Tareas
+```
+Work2027 priorizar: Ordena mis tareas pendientes por impacto, urgencia y esfuerzo requerido. Sugiere la secuencia óptima de ejecución.
+```
+
+#### 💡 Ideas y Creatividad
+```
+Work2027 ideas: Genera 5 ideas innovadoras para automatizar mi flujo de trabajo usando Python, IA y Microsoft 365.
+```
+
+### 📱 PROMPTS ESPECÍFICOS MÓVIL
+
+#### ⏰ Check Rápido Matutino
+```
+Buenos días Work2027: Resume mis citas de hoy, tareas prioritarias y recordatorios importantes. ¿Qué necesito saber para empezar bien el día?
+```
+
+#### 🔔 Check Vespertino
+```
+Work2027 cierre: Evalúa mi día, logros conseguidos, tareas pendientes y preparación para mañana. Genera resumen para archivo.
+```
+
+#### 🚗 Prompts para Viaje
+```
+Work2027 móvil: Qué tareas puedo hacer desde el móvil ahora mismo que contribuyan a mis objetivos Work2027?
+```
+
+#### 📞 Entre Reuniones
+```
+Work2027 quick: Tengo 10 minutos libres. ¿Qué tarea pequeña pero valiosa puedo completar ahora para avanzar mis proyectos?
+```
+
+### 🔧 PROMPTS TÉCNICOS SIMPLIFICADOS
+
+#### 🐍 Python Móvil
+```
+Python simple: Explica este concepto de programación en términos simples que pueda entender y aplicar cuando regrese al ordenador.
+```
+
+#### 📊 Datos Rápidos
+```
+Datos insight: Interpreta estos números/métricas de forma simple y sugiere una acción concreta que pueda tomar.
+```
+
+#### 🔗 GitHub Móvil
+```
+Git status: Resume el estado de mis repositorios y cambios pendientes. ¿Qué necesito hacer cuando esté en el ordenador?
+```
+
+### 💼 PROMPTS PROFESIONALES
+
+#### 📧 Email Inteligente
+```
+Email Work2027: Ayúdame a redactar un email profesional sobre [tema]. Tono: [formal/informal], objetivo: [informar/solicitar/seguimiento].
+```
+
+#### 📋 Reuniones Eficaces
+```
+Reunión prep: Prepara agenda y puntos clave para mi reunión sobre [tema] con [personas]. Incluye preguntas estratégicas.
+```
+
+#### 🎯 Decisiones Rápidas
+```
+Decisión Work2027: Ayúdame a evaluar esta situación: [descripción]. Pros, contras y recomendación basada en mis objetivos.
+```
+
+### 🎨 PROMPTS CREATIVOS
+
+#### ✨ Brainstorming
+```
+Brainstorm Work2027: Necesito ideas creativas para [problema/proyecto]. Combina tecnología, automatización y productividad personal.
+```
+
+#### 🔮 Visión Futura
+```
+Futuro Work2027: ¿Cómo podría evolucionar mi sistema de trabajo en los próximos 6 meses? Tecnologías emergentes a considerar.
+```
+
+#### 🎪 Gamificación
+```
+Game Work2027: Convierte mi lista de tareas en un juego motivador con puntos, niveles y recompensas.
+```
+
+### 🆘 PROMPTS DE EMERGENCIA
+
+#### 🚨 Bloqueo Creativo
+```
+Desbloqueo Work2027: Estoy estancado en [tarea/proyecto]. Necesito 3 enfoques diferentes para seguir avanzando.
+```
+
+#### ⚡ Energía Baja
+```
+Energía Work2027: Mi energía está baja. Sugiere tareas ligeras pero productivas que pueda hacer ahora para mantener momentum.
+```
+
+#### 🎪 Sobrecarga
+```
+Overload Work2027: Tengo demasiadas tareas. Ayúdame a filtrar, delegar o eliminar para enfocarme en lo esencial.
+```
+
+### 📊 PROMPTS DE MÉTRICAS
+
+#### 📈 Tracking Personal
+```
+Métricas Work2027: Ayúdame a definir 5 KPIs personales para medir mi productividad y progreso hacia objetivos.
+```
+
+#### 🎯 Objetivos SMART
+```
+SMART Work2027: Convierte este objetivo vago en un objetivo SMART con timeline y métricas claras: [objetivo].
+```
+
+### 🔄 PROMPTS DE HÁBITOS
+
+#### 🌅 Rutina Matutina
+```
+Morning Work2027: Diseña una rutina matutina de 30 minutos que maximice mi productividad para el resto del día.
+```
+
+#### 🌙 Rutina Nocturna
+```
+Evening Work2027: Crea rutina nocturna para cerrar el día productivamente y preparar el mañana.
+```
+
+### 🎓 PROMPTS DE APRENDIZAJE
+
+#### 📚 Micro-Learning
+```
+Learn Work2027: Sugiere algo pequeño pero valioso que pueda aprender en 15 minutos relacionado con mis objetivos.
+```
+
+#### 🧠 Skill Building
+```
+Skill Work2027: ¿Qué habilidad debería desarrollar este mes para acelerar mi crecimiento profesional?
+```
+
+---
+
+## 🎯 TIPS DE USO MÓVIL
+
+### ✅ Mejores Prácticas:
+- **Sé específico**: Incluye contexto y objetivos claros
+- **Usa keywords**: "Work2027" activa el contexto personalizado
+- **Tiempo limitado**: Menciona cuánto tiempo tienes disponible
+- **Acción clara**: Termina con qué tipo de respuesta necesitas
+
+### 🚀 Comandos de Activación:
+- `Work2027 [comando]` - Activa contexto personalizado
+- `Quick [tarea]` - Para acciones rápidas
+- `Help [problema]` - Para resolución de problemas
+- `Plan [objetivo]` - Para planificación estratégica
+
+### 📱 Contexto Móvil:
+Siempre menciona que estás en móvil para recibir respuestas optimizadas para la pantalla y situación.
+
+---
+
+*Prompts optimizados para Samsung Copilot App - Work 2027 v2.0*
